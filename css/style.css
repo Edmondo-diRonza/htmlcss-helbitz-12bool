@@ -1,0 +1,88 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Mix  */
+a {
+    text-decoration: none;    
+}
+.inline-menu {
+    list-style: none;
+}
+.inline-menu li {
+    display: inline-block;
+    padding-right: 35px;    
+}
+
+/* Header  */
+
+#header-top {
+    background-color: #fff;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#logo  {
+    height: 12px;
+}
+#main-nav {
+    text-align: right;
+}
+#main-nav .inline-menu li a {
+    color: #000;
+    font-size: 0.7rem;
+}
+#jumbotron {
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 625px;
+    background-position: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+#jumbotron-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#jumbotron-text p, h1 {
+    color: #fff;
+    margin: 10px 0px;
+}
+#jumbotron-text img {
+    width: 150px;
+    margin: 15px 5px;
+}
+.product-box{
+    padding: 55px;
+    margin: 15px;
+    background-color: #fafafa;
+    text-align: center;
+}
+.img_products_logo {
+    height: 25px;    
+}
+.margin-top-25 {
+    margin: 25px 0;
+
+}
+.product-text {
+    font-size: 1.3rem;    
+}
+.link-arrow {
+    text-decoration: none;
+    color: #0070c8;
+}
+.img_products_item {
+    height: 300px;
+}
+
+
+
+/* Main  */
