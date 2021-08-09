@@ -11,7 +11,7 @@ a {
 }
 .inline-menu li {
     display: inline-block;
-    padding-right: 35px;    
+    padding-right: 30px;    
 }
 
 /* Header  */
@@ -24,16 +24,34 @@ a {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 #logo  {
     height: 12px;
+    padding-left: 15px;
 }
 #main-nav {
-    text-align: right;
+    text-align: right;    
 }
-#main-nav .inline-menu li a {
+#aside-nav {
+    padding-right: 10px;
+    text-align: right;   
+        
+}
+#aside-nav .inline-menu li:last-child a{
+    background-color: black;
+    color: #fff;
+    padding: 10px 13px;
+    font-size: 12px;    
+}
+#main-nav .inline-menu li a, #aside-nav .inline-menu li a {
     color: #000;
-    font-size: 0.7rem;
+    font-size: 0.70rem;    
+}
+#mobile-hamburger {
+    text-align: right;
+    font-size: 1.3em;
+    padding-right: 30px;
 }
 #jumbotron {
     background-image: url(../img/hero-bg.jpg);
@@ -53,36 +71,48 @@ a {
 }
 #jumbotron-text p, h1 {
     color: #fff;
-    margin: 10px 0px;
+    margin: 10px 0px;    
 }
 #jumbotron-text img {
     width: 150px;
-    margin: 15px 5px;
+    margin: 15px 5px;    
+}
+
+/* Main  */
+#products {
+    margin-bottom: 70px;
 }
 .product-box{
     padding: 55px;
-    margin: 15px;
+    margin: 25px;
     background-color: #fafafa;
     text-align: center;
 }
 .img_products_logo {
-    height: 25px;    
+    height: 25px;
+    max-width: 100%;    
 }
 .margin-top-25 {
     margin: 25px 0;
 
 }
 .product-text {
-    font-size: 1.3rem;    
+    font-size: 1.3rem; 
+    display: inline-block;
+    width: 100%;       
 }
 .link-arrow {
     text-decoration: none;
     color: #0070c8;
 }
 .img_products_item {
-    height: 300px;
+    max-height: 300px;
+    max-width: 100%;
 }
 
-
-
-/* Main  */
+/* Responsive adjustments  */
+@media screen and (max-width: 992px) {
+    #logo-shift {
+        text-align: center;
+    }
+}
